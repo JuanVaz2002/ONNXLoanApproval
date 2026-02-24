@@ -4,7 +4,7 @@ Esta es una aplicación de escritorio desarrollada en **C# (.NET Windows Forms)*
 
 El proyecto demuestra la interoperabilidad de los modelos de Machine Learning al cargar un pipeline de *Scikit-Learn* (Random Forest) entrenado en Python y exportado al formato estándar **ONNX** para ejecutar inferencia nativa en un entorno de C#.
 
-## ✨ Características Principales (Cumplimiento de Rúbrica)
+## ✨ Características Principales
 
 * **Carga de Modelo Serializado:** La aplicación utiliza `Microsoft.ML.OnnxRuntime` para cargar el modelo `loan_model.onnx` de forma adecuada.
 * **Inferencia Fuera de Python (Puntos Extra):** Ejecución de predicciones en tiempo real utilizando C# y el ecosistema .NET.
