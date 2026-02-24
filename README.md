@@ -7,8 +7,8 @@ El proyecto demuestra la interoperabilidad de los modelos de Machine Learning al
 ## ✨ Características Principales
 
 * **Carga de Modelo Serializado:** La aplicación utiliza `Microsoft.ML.OnnxRuntime` para cargar el modelo `loan_model.onnx` de forma adecuada.
-* **Inferencia Fuera de Python (Puntos Extra):** Ejecución de predicciones en tiempo real utilizando C# y el ecosistema .NET.
-* **Interfaz Gráfica y Validación (Puntos Extra):** Implementación de una GUI amigable e intuitiva. Se reemplazaron las entradas de texto libre por controles estrictos (`ComboBox` para variables categóricas y `NumericUpDown` para numéricas) garantizando la **validación de entrada** antes de enviarla al tensor.
+* **Inferencia:** Ejecución de predicciones en tiempo real utilizando C# y el ecosistema .NET.
+* **Interfaz Gráfica y Validación:** Implementación de una GUI amigable e intuitiva. Se reemplazaron las entradas de texto libre por controles estrictos (`ComboBox` para variables categóricas y `NumericUpDown` para numéricas) garantizando la **validación de entrada** antes de enviarla al tensor.
 * **UI Responsiva:** El botón de predicción implementa programación asíncrona (`async/await Task.Delay`) para mostrar el resultado visualmente durante 3 segundos sin congelar la interfaz de usuario.
 
 ## 🛠️ Requisitos Previos
