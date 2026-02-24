@@ -16,7 +16,7 @@ El proyecto demuestra la interoperabilidad de los modelos de Machine Learning al
 Para ejecutar este proyecto en tu máquina local, necesitarás:
 * [Visual Studio 2022](https://visualstudio.microsoft.com/es/) (con la carga de trabajo de "Desarrollo de escritorio de .NET").
 * .NET 6.0 o superior.
-* El paquete NuGet `Microsoft.ML.OnnxRuntime` (ya referenciado en el proyecto).
+* El paquete NuGet `Microsoft.ML.OnnxRuntime`.
 
 ## 🚀 Instalación y Uso
 
