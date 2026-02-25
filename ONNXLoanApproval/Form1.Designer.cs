@@ -40,7 +40,6 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
@@ -53,15 +52,16 @@
             personAge = new NumericUpDown();
             personCreditHistoricalLength = new NumericUpDown();
             personIncome = new NumericUpDown();
-            personCreditScore = new NumericUpDown();
             personYearsOfEmploymentExperience = new NumericUpDown();
             loanInterestRate = new NumericUpDown();
             loanAmount = new NumericUpDown();
             loanPercentIncome = new NumericUpDown();
+            label5 = new Label();
+            label14 = new Label();
+            puntajeCredito = new Label();
             ((System.ComponentModel.ISupportInitialize)personAge).BeginInit();
             ((System.ComponentModel.ISupportInitialize)personCreditHistoricalLength).BeginInit();
             ((System.ComponentModel.ISupportInitialize)personIncome).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)personCreditScore).BeginInit();
             ((System.ComponentModel.ISupportInitialize)personYearsOfEmploymentExperience).BeginInit();
             ((System.ComponentModel.ISupportInitialize)loanInterestRate).BeginInit();
             ((System.ComponentModel.ISupportInitialize)loanAmount).BeginInit();
@@ -70,7 +70,7 @@
             // 
             // buttonPredict
             // 
-            buttonPredict.Location = new Point(387, 313);
+            buttonPredict.Location = new Point(387, 285);
             buttonPredict.Name = "buttonPredict";
             buttonPredict.Size = new Size(180, 51);
             buttonPredict.TabIndex = 0;
@@ -109,7 +109,7 @@
             // personEducation
             // 
             personEducation.FormattingEnabled = true;
-            personEducation.Location = new Point(311, 235);
+            personEducation.Location = new Point(311, 205);
             personEducation.Name = "personEducation";
             personEducation.Size = new Size(121, 23);
             personEducation.TabIndex = 12;
@@ -117,7 +117,7 @@
             // personHomeOwnership
             // 
             personHomeOwnership.FormattingEnabled = true;
-            personHomeOwnership.Location = new Point(311, 264);
+            personHomeOwnership.Location = new Point(311, 234);
             personHomeOwnership.Name = "personHomeOwnership";
             personHomeOwnership.Size = new Size(121, 23);
             personHomeOwnership.TabIndex = 13;
@@ -142,11 +142,11 @@
             // 
             loanStatus.AutoSize = true;
             loanStatus.Font = new Font("Segoe UI", 12F);
-            loanStatus.Location = new Point(341, 400);
+            loanStatus.Location = new Point(68, 400);
             loanStatus.Name = "loanStatus";
-            loanStatus.Size = new Size(270, 21);
+            loanStatus.Size = new Size(319, 21);
             loanStatus.TabIndex = 16;
-            loanStatus.Text = " ____________________________________ ";
+            loanStatus.Text = " ___________________________________________ ";
             loanStatus.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -179,21 +179,11 @@
             label4.TabIndex = 18;
             label4.Text = "Años de Experencia Laboral";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F);
-            label5.Location = new Point(8, 177);
-            label5.Name = "label5";
-            label5.Size = new Size(138, 21);
-            label5.TabIndex = 18;
-            label5.Text = "Puntaje de Credito";
-            // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F);
-            label6.Location = new Point(8, 208);
+            label6.Location = new Point(8, 176);
             label6.Name = "label6";
             label6.Size = new Size(275, 21);
             label6.TabIndex = 18;
@@ -203,7 +193,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F);
-            label7.Location = new Point(8, 237);
+            label7.Location = new Point(8, 207);
             label7.Name = "label7";
             label7.Size = new Size(80, 21);
             label7.TabIndex = 19;
@@ -213,7 +203,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F);
-            label8.Location = new Point(8, 266);
+            label8.Location = new Point(8, 236);
             label8.Name = "label8";
             label8.Size = new Size(224, 21);
             label8.TabIndex = 20;
@@ -288,7 +278,7 @@
             // 
             // personCreditHistoricalLength
             // 
-            personCreditHistoricalLength.Location = new Point(311, 208);
+            personCreditHistoricalLength.Location = new Point(311, 176);
             personCreditHistoricalLength.Name = "personCreditHistoricalLength";
             personCreditHistoricalLength.Size = new Size(120, 23);
             personCreditHistoricalLength.TabIndex = 28;
@@ -299,13 +289,6 @@
             personIncome.Name = "personIncome";
             personIncome.Size = new Size(120, 23);
             personIncome.TabIndex = 29;
-            // 
-            // personCreditScore
-            // 
-            personCreditScore.Location = new Point(311, 175);
-            personCreditScore.Name = "personCreditScore";
-            personCreditScore.Size = new Size(120, 23);
-            personCreditScore.TabIndex = 30;
             // 
             // personYearsOfEmploymentExperience
             // 
@@ -335,16 +318,50 @@
             loanPercentIncome.Size = new Size(120, 23);
             loanPercentIncome.TabIndex = 34;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F);
+            label5.Location = new Point(159, 363);
+            label5.Name = "label5";
+            label5.Size = new Size(150, 21);
+            label5.TabIndex = 35;
+            label5.Text = "Estatus de Préstamo";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 12F);
+            label14.Location = new Point(668, 362);
+            label14.Name = "label14";
+            label14.Size = new Size(138, 21);
+            label14.TabIndex = 37;
+            label14.Text = "Puntaje de Crédito";
+            // 
+            // puntajeCredito
+            // 
+            puntajeCredito.AutoSize = true;
+            puntajeCredito.Font = new Font("Segoe UI", 12F);
+            puntajeCredito.Location = new Point(716, 399);
+            puntajeCredito.Name = "puntajeCredito";
+            puntajeCredito.Size = new Size(39, 21);
+            puntajeCredito.TabIndex = 36;
+            puntajeCredito.Text = " ___ ";
+            puntajeCredito.TextAlign = ContentAlignment.MiddleCenter;
+            puntajeCredito.Click += puntajeCredito_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(964, 461);
+            Controls.Add(label14);
+            Controls.Add(puntajeCredito);
+            Controls.Add(label5);
             Controls.Add(loanPercentIncome);
             Controls.Add(loanAmount);
             Controls.Add(loanInterestRate);
             Controls.Add(personYearsOfEmploymentExperience);
-            Controls.Add(personCreditScore);
             Controls.Add(personIncome);
             Controls.Add(personCreditHistoricalLength);
             Controls.Add(personAge);
@@ -357,7 +374,6 @@
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -376,7 +392,6 @@
             ((System.ComponentModel.ISupportInitialize)personAge).EndInit();
             ((System.ComponentModel.ISupportInitialize)personCreditHistoricalLength).EndInit();
             ((System.ComponentModel.ISupportInitialize)personIncome).EndInit();
-            ((System.ComponentModel.ISupportInitialize)personCreditScore).EndInit();
             ((System.ComponentModel.ISupportInitialize)personYearsOfEmploymentExperience).EndInit();
             ((System.ComponentModel.ISupportInitialize)loanInterestRate).EndInit();
             ((System.ComponentModel.ISupportInitialize)loanAmount).EndInit();
@@ -394,7 +409,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
         private Label label6;
         private Label label7;
         private Label label8;
@@ -406,7 +420,6 @@
         private NumericUpDown personAge;
         private NumericUpDown personIncome;
         private NumericUpDown personCreditHistoricalLength;
-        private NumericUpDown personCreditScore;
         private NumericUpDown personYearsOfEmploymentExperience;
         private NumericUpDown loanInterestRate;
         private NumericUpDown loanAmount;
@@ -417,5 +430,8 @@
         private ComboBox loanIntent;
         private ComboBox previousLoanDefaultsOnFile;
         private Label loanStatus;
+        private Label label5;
+        private Label label14;
+        private Label puntajeCredito;
     }
 }
